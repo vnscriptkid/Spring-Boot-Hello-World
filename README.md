@@ -21,6 +21,9 @@
 
 - Controller vs RestController
   > @RestController = @Controller + @ResponseBody
+  - When to use?
+    > Controller: render template
+    > Send data dirrectly to client
 - Servlet
   - @ServletComponentScan
     > scan for @WebServlet
@@ -41,7 +44,12 @@
 
 - Why @Overwrite, what if it's not included?
 - Spring IoC container
+
   - Dependency Injection
   - 2 types of containers:
     - BeanFactory
     - ApplicationContext
+
+- Template engines:
+  > Freemarker
+  > Thymeleaf
