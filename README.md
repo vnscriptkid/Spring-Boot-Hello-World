@@ -51,5 +51,9 @@
     - ApplicationContext
 
 - Template engines:
-  > Freemarker
-  > Thymeleaf
+  - Freemarker
+  - Thymeleaf
+    - 3 Scopes
+      > request
+      > request.getSession()
+      > request.getSession().getServletContext()

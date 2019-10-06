@@ -3,6 +3,8 @@ package com.example.springboothello.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import com.example.springboothello.model.User;
 
 import org.springframework.stereotype.Controller;
@@ -28,6 +30,18 @@ public class UserController {
     list.add(new User(2, "Dung", 24));
     list.add(new User(2, "Linh", 19));
     model.addAttribute("list", list);
+    return "demo2";
+  }
+
+  @RequestMapping("demo3")
+  public String demo3(HttpServletRequest request, Model model) {
+    // Request
+    request.setAttribute("request", request);
+    // Session
+    request.getSession().setAttribute("session", "session data");
+    // App
+    request.getSession().getServletContext().setAttribute("application", "application data");
+
     return "demo2";
   }
 
