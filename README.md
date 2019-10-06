@@ -25,6 +25,7 @@
   - @ServletComponentScan
     > scan for @WebServlet
   - @Bean
+    > Register Servlet, Fitler, Listener with @Bean
 - Servlet vs Controlller ?
 - Filter
 
