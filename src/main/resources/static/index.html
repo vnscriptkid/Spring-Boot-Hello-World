@@ -8,5 +8,10 @@
   </head>
   <body>
     <h1>Welcome to Java Web World</h1>
+    <h3>File Upload</h3>
+    <form action="/uploadFile" method="post" enctype="multipart/form-data">
+      Select file: <input type="file" name="attach" /><br />
+      <input type="submit" value="Upload" />
+    </form>
   </body>
 </html>
