@@ -51,9 +51,14 @@
     - ApplicationContext
 
 - Template engines:
+
   - Freemarker
   - Thymeleaf
     - 3 Scopes
       > request
       > request.getSession()
       > request.getSession().getServletContext()
+
+- Error handling
+  - resources/templates/error.html
+  - @ExceptionHandler
