@@ -62,3 +62,7 @@
 - Error handling
   - resources/templates/error.html
   - @ExceptionHandler
+    > Handle differently for different exceptions caught
+    > Put inside controllers
+  - @ControllerAdvice + @ExceptionHandler:
+    > exceptions/GlobalExceptionHandler

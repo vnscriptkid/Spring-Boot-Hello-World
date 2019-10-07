@@ -60,21 +60,21 @@ public class UserController {
     return "update";
   }
 
-  @ExceptionHandler(value = { ArithmeticException.class })
-  public ModelAndView handlerArithmeticException(Exception e) {
-    ModelAndView modelAndView = new ModelAndView();
-    modelAndView.addObject("exception", e.toString());
-    modelAndView.setViewName("mathError");
-    return modelAndView;
-  }
+  // @ExceptionHandler(value = { ArithmeticException.class })
+  // public ModelAndView handlerArithmeticException(Exception e) {
+  // ModelAndView modelAndView = new ModelAndView();
+  // modelAndView.addObject("exception", e.toString());
+  // modelAndView.setViewName("mathError");
+  // return modelAndView;
+  // }
 
-  @ExceptionHandler(value = { NullPointerException.class })
-  public ModelAndView handlerNullPointerException(Exception e) {
-    ModelAndView modelAndView = new ModelAndView();
-    modelAndView.addObject("exception", e.toString());
-    modelAndView.setViewName("nullPointerError");
-    return modelAndView;
-  }
+  // @ExceptionHandler(value = { NullPointerException.class })
+  // public ModelAndView handlerNullPointerException(Exception e) {
+  // ModelAndView modelAndView = new ModelAndView();
+  // modelAndView.addObject("exception", e.toString());
+  // modelAndView.setViewName("nullPointerError");
+  // return modelAndView;
+  // }
 
   private String convertGPA(double grade) {
     if (grade >= 90) {
