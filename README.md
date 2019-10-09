@@ -3,6 +3,7 @@
 - https://start.spring.io/
 - mvn spring-boot:run -> Run Tomcat server
 - http://localhost:8080/hello
+- mvn clean compile
 
 2. Observations
 
@@ -69,6 +70,7 @@
     > exceptions/GlobalExceptionHandler
 
 - Web Socket
+
   - STOMP
   - In Spring Boot
     - WebSocketConfig
@@ -76,3 +78,17 @@
     - Message Wrapper
     - Message Controller
     - Browser Client
+
+- Unit Test
+
+  - @SpringBootTest
+    > search for @SpringBootTest to create app context
+
+- Structural pattern
+  - Service: business layer
+  - DAO: persistence layer, perform CRUD, alternative: JPA
+
+3. Good resources:
+
+- https://howtodoinjava.com/spring-boot2/springbootapplication-auto-configuration/
+- https://reflectoring.io/categories/spring-boot/
