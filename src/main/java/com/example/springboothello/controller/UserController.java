@@ -5,14 +5,24 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.example.springboothello.model.Message;
 import com.example.springboothello.model.User;
 
+import org.springframework.messaging.handler.annotation.MessageMapping;
+import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class UserController {
+  @MessageMapping("/user")
+  @SendTo("/topic/user")
+  public Message sayHelloToUser(User user) {
+    String content = "Hello, " + user.getName();
+    return new Message(content);
+  }
+
   @RequestMapping("/demo")
   public String demo(Model model) {
     model.addAttribute("message", "Hello Thymeleaf");
