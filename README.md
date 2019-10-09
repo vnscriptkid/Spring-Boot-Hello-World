@@ -91,6 +91,8 @@
   - outputs
     - console
     - file
+  - logback.xml
+    > log format and path
 
 - Structural pattern
   - Service: business layer
