@@ -84,6 +84,14 @@
   - @SpringBootTest
     > search for @SpringBootTest to create app context
 
+- Logging
+
+  - application.properties
+    > level of logging: DEBUG > INFO > WARN > ERROR
+  - outputs
+    - console
+    - file
+
 - Structural pattern
   - Service: business layer
   - DAO: persistence layer, perform CRUD, alternative: JPA
