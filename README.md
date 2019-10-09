@@ -1,6 +1,6 @@
 1. SETUP
 
-- https://start.spring.io/
+- Spring Initializr: https://start.spring.io/
 - mvn spring-boot:run -> Run Tomcat server
 - http://localhost:8080/hello
 
@@ -69,6 +69,7 @@
     > exceptions/GlobalExceptionHandler
 
 - Web Socket
+
   - STOMP
   - In Spring Boot
     - WebSocketConfig
@@ -76,3 +77,7 @@
     - Message Wrapper
     - Message Controller
     - Browser Client
+
+- Form Validation
+  - javax.validation.constraints
+  - Set up a model for form with getters, setters
