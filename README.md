@@ -77,6 +77,8 @@
     - Message Wrapper
     - Message Controller
     - Browser Client
+  - Message Broker
+  - Message Scheduler
 
 - Form Validation
   - javax.validation.constraints
