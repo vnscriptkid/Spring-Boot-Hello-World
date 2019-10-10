@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserController {
   @MessageMapping("/user")
   @SendTo("/topic/user")
-  public Message sayHelloToUser(User user) {
+  public String sayHelloToUser(User user) {
     String content = "Hello, " + user.getName();
-    return new Message(content);
+    return new Message(content).getContent();
   }
 
   @RequestMapping("/demo")

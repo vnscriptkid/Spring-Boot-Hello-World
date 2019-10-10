@@ -6,9 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Java is Complex</title>
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
-    <h1>Welcome to Java Web World</h1>
-    <script></script>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div class="div">
+            <strong>WebSocket Connection</strong>
+            <button id="connect" class="btn btn-success">Connect</button>
+            <button id="disconnect" class="btn btn-danger">Disconnect</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form
+            id="myNameForm"
+            method="POST"
+            action="/hello"
+            class="form-inline"
+          >
+            <strong>What is your name?</strong>
+            <input id="myName" class="form-control" />
+            <button id="submitMyName" type="submit" class="btn btn-info">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <ul class="list-group msgList"></ul>
+    </div>
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
